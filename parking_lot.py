@@ -35,34 +35,16 @@ class ParkingLot:
         # s3_client = boto3.resource('s3')
         # s3_client.upload_file('parking_lot_map.json', 'bucket_name', 'parking_lot_map.json')
 
-
-    class Car:
-        """
-            Car class that takes in a 7 digit license plate and sets it as a property
-
-            methods:
-            park
-                - params: parking spot (class instance)
-                          spot (int)
-
-        """
-        def __init__(self, license_plate):
-            self.license_plate = license_plate
-    
-        # Magic method to output the license plate when converting the class instance to a string.
-        def __str__(self):
-            return self.license_plate
-    
-        # Method to park the car in a given spot in the parking lot
-        def park(self, parking_lot, spot):
-            # Check if spot is already occupied
-            if parking_lot[spot] is None:
-                # Park the car
-                parking_lot[spot] = self
-                return "Car with license plate {} parked successfully in spot {}".format(self.license_plate, spot)
-            else:
-                return "Car with license plate {} was not parked successfully".format(self.license_plate)
 class Car:
+    """
+        Car class that takes in a 7 digit license plate and sets it as a property
+
+        methods:
+        park
+            - params: parking spot (class instance)
+                        spot (int)
+
+     """
     def __init__(self, license_plate):
         self.license_plate = license_plate
 
