@@ -13,3 +13,6 @@ Have a main method take an array of cars with random license plates and have the
 Output when a car does or does not park successfully to the terminal (Ex. "Car with license plate [LICENSE_PLATE] parked successfully in spot [SPOT #]").
 
 OPTIONAL/BONUS - Create a method for the parking lot class that maps vehicles to parked spots in a JSON object. Call this method at the end of the program, save the object to a file, and upload the file to an input S3 bucket.
+
+
+Command to execute - python parking_lot.py
